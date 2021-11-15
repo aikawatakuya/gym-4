@@ -1,0 +1,275 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.c-topview {
+  &__title {
+    & .c-txt-lr {
+      font-size: 34px;
+    }
+    & .c-txt-sm {
+      font-size: 17px;
+    }
+  }
+}
+
+//#about
+.p-about {
+  &__img {
+    &.left,
+    &.right {
+      height: 360px;
+    }
+
+    & img {
+      height: 80%;
+    }
+  }
+
+  .cover-bg {
+    top: 65%;
+  }
+}
+
+//#message
+.p-message {
+  &__img {
+    text-align: center;
+  }
+
+  & .c-txt-vertical {
+    font-size: 1.5rem;
+    left: 1%;
+  }
+}
+
+//.menu
+.p-menu {
+  &__label {
+    font-size: 1.6rem;
+  }
+
+  &__table {
+    font-size: 1.2rem;
+  }
+}
+
+//.p-staff
+.p-staff {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 100%;
+    height: 360px;
+  }
+
+  &__desc {
+    width: 100%;
+    padding: 2vw;
+    margin: -3vw 0;
+  }
+
+  &__name {
+    &__ja {
+      font-size: 1.4rem;
+    }
+
+    &__en {
+      font-size: 1rem;
+    }
+  }
+}
+
+//#special
+.p-special {
+  & h3 {
+    font-size: 1.8rem;
+  }
+
+  &__img {
+    & img {
+      height: 100%;
+    }
+
+    &.left {
+      margin-bottom: 3vw;
+    }
+
+    &.right {
+      margin-bottom: 5vw;
+    }
+  }
+}
+
+//#news
+.p-news {
+  padding: 10vw 0 0 0;
+
+  &__tit {
+    margin-bottom: 7vw;
+  }
+
+  &__link {
+    padding: 4vw 0;
+  }
+
+  &__date {
+    font-size: 1.4rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+  }
+
+  & .view-more {
+    padding-bottom: 5vw;
+  }
+}
+
+//#information
+.p-info {
+  padding: 10vw 0 15vw 0;
+
+  &__list {
+    display: block;
+  }
+
+  &__img {
+    height: 600px;
+    width: 40%;
+  }
+
+  &__wrapper {
+    width: 50%;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    margin-top: 2vw;
+    width: 100%;
+
+    & p {
+      font-size: 1.2rem;
+      display: inline-block;
+    }
+
+    & span {
+      font-size: 1.4rem;
+    }
+
+    & .open,
+    & .post {
+      display: block;
+    }
+  }
+
+  & .g-map {
+    font-size: 1.2rem;
+
+    &::before {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+//footer
+.p-footer {
+  padding: 6vw 0;
+
+  & .c-container {
+    justify-content: space-around;
+  }
+
+  & .copyright {
+    font-size: 1.4rem;
+  }
+}
+
+// * * * * * * * * * 初めての方へ * * * * * *
+.c-first {
+  .c-flow {
+    & .item-img {
+      & img {
+        width: 85%;
+      }
+    }
+  }
+}
+
+// * * * * * * * * * 料金体系 * * * * * *
+.c-price {
+  &__img {
+    height: 250px;
+  }
+}
+
+// * * * * * * * * * お知らせ一覧 * * * * * *
+.news-wrapper {
+  .c-title {
+    margin-bottom: 50px;
+  }
+}
+
+// * * * * * * * * * よくあるご質問 * * * * * *
+.faq-wrapper {
+  .faq-contents {
+    .c-container {
+      padding: 0 20vw;
+    }
+
+    .faq {
+      &__title {
+        margin-bottom: 5vw;
+      }
+
+      &__block {
+        & dt,
+        & dd {
+          & .c-txt-md {
+            font-size: 24px;
+          }
+        }
+      }
+
+      & dt {
+        padding: 0 0 2vw 0;
+
+        span {
+          &::after {
+            height: 24px;
+          }
+        }
+      }
+
+      & .c-title {
+        font-size: 26px;
+      }
+
+      & .c-txtarea01 {
+        & .c-txt-sm {
+          font-size: 20px;
+        }
+      }
+
+      & .c-txt-sm {
+        font-size: 24px;
+      }
+    }
+  }
+}
